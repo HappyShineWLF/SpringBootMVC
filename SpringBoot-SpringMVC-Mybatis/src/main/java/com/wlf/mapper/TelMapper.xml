@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wlf.mapper.TelMapper">
+	<!-- <insert id="insertUser" parameterType="com.wlf.pojo.Users">
+		insert into users(name,age) values(#{name},#{age})
+	</insert> -->
+	
+	<!-- <select id="selectUsersAll" resultType="Users">
+		select id,name,age from users
+	</select> -->
+	
+	<!-- 别名测试 -->
+	<select id="selectTel" resultType="com.wlf.pojo.Tel">
+		select * from telinfo
+	</select>
+	
+	<select id="selectTel7" resultType="com.wlf.pojo.Tel">
+		select * from telinfo7
+	</select>
+	
+	<select id="selectTel8" resultType="com.wlf.pojo.Tel">
+		select * from telinfo8
+	</select>
+	
+	<select id="selectTel9" resultType="com.wlf.pojo.Tel">
+		select * from telinfo9
+	</select>
+	
+	<select id="selectTel10" resultType="com.wlf.pojo.Tel">
+		select * from telinfo10
+	</select>
+	
+	<select id="selectTel11" resultType="com.wlf.pojo.Tel">
+		select * from telinfo11
+	</select>
+	
+	<select id="selectTel12" resultType="com.wlf.pojo.Tel">
+		select * from telinfo12
+	</select>
+	
+	<select id="selectTel13" resultType="com.wlf.pojo.Tel">
+		select * from telinfo13
+	</select>
+</mapper>

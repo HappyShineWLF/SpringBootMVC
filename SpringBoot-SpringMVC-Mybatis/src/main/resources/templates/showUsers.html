@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>展示用户数据</title>
+<style type="text/css">
+ table.gridtable {
+      font-family: verdana,arial,sans-serif;
+      font-size:11px;
+      color:#333333;
+      border-width: 1px;
+      border-color: #666666;
+      border-collapse: collapse;
+ }
+ table.gridtable th {
+     border-width: 1px;
+     padding: 8px;
+     border-style: solid;
+     border-color: #666666;
+     background-color: #dedede;
+ }
+ table.gridtable td {
+     border-width: 1px;
+     padding: 8px;
+     border-style: solid;
+     border-color: #666666;
+     background-color: #ffffff;
+ }
+ </style>
+
+</head>
+<body>
+	<table class="gridtable">
+		<tr>
+			<th>序号</th>
+			<th>省份</th>
+			<th>地市</th>
+			<th>区号</th>
+			<th>号码</th>
+			<th>区间</th>
+		</tr>
+		<tr th:each="user : ${list}">
+			 <td th:text="${user.id}"></td>
+			<td th:text="${user.province}"></td>
+			<td th:text="${user.city}"></td>
+			<td th:text="${user.code}"></td>
+			<td th:text="${user.number1}"></td>
+			<td th:text="${user.section1}"></td>
+			
+		</tr>
+	</table>
+</body>
+</html>
