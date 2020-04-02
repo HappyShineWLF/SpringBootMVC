@@ -33,19 +33,13 @@
 	<table class="gridtable">
 		<tr>
 			<th>序号</th>
-			<th>省份</th>
-			<th>地市</th>
-			<th>区号</th>
-			<th>号码</th>
-			<th>区间</th>
+			<th>姓名</th>
+			<th>年龄</th>
 		</tr>
 		<tr th:each="user : ${list}">
 			 <td th:text="${user.id}"></td>
-			<td th:text="${user.province}"></td>
-			<td th:text="${user.city}"></td>
-			<td th:text="${user.code}"></td>
-			<td th:text="${user.number1}"></td>
-			<td th:text="${user.section1}"></td>
+			<td th:text="${user.name}"></td>
+			<td th:text="${user.age}"></td>
 			
 		</tr>
 	</table>

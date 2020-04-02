@@ -7,12 +7,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		insert into users(name,age) values(#{name},#{age})
 	</insert>
 	
-	<!-- <select id="selectUsersAll" resultType="Users">
+	 <!-- <select id="selectUsersAll" resultType="com.wlf.pojo.Users">
 		select id,name,age from users
 	</select> -->
 	
 	<!-- 别名测试 -->
-	<select id="selectUsersAll" resultType="com.wlf.pojo.Users">
+	 <select id="selectUsersAll" resultType="com.wlf.pojo.Users">
 		select id,user_name as name,user_age as age from t_users_info
 	</select>
 </mapper>
